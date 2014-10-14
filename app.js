@@ -4,8 +4,8 @@ var express = require('express')
   , AWS = require('aws-sdk')
   , s3 = new AWS.S3()
   , zlib = require('zlib')
-  , history = require('history')
-  , logger = require('logger');
+  , history = require('./history')
+  , logger = require('./logger');
 
 
 var auth = {
