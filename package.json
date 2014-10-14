@@ -1,0 +1,15 @@
+{
+  "name": "cloudtrail2graylog",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "s3": "~3.1.1",
+    "aws-sdk": "~2.0.5",
+    "winston": "0.7.3",
+    "winston-graylog2": "0.1.10"
+
+  }
+}
