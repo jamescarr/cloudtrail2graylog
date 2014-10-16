@@ -24,7 +24,7 @@ var client = SNSClient(auth, function(err, message) {
       zlib.unzip(data.Body, function(err, buffer) {
         var doc = JSON.parse(buffer.toString());
         doc.Records.forEach(function(event) {
-          if (event.eventType == 'DescribeInstances') {
+          if (event.eventName == 'DescribeInstances') {
             return;
           }
           if(!history.check(event)) {
